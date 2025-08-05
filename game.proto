@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option csharp_namespace = "RPGServer.Protos";
+
 package RPGServer;
 
 message PlayerData {
@@ -35,7 +37,7 @@ message SaveResponse {
 }
 
 service GameService {
-  rpc Register(RegisterRequest) returns (RegisterResponse);
-  rpc Login(LoginRequest) returns (LoginResponse);
-  rpc SavePlayer(PlayerData) returns (SaveResponse);
+  rpc Register (RegisterRequest) returns (RegisterResponse);
+  rpc Login (LoginRequest) returns (LoginResponse);
+  rpc SavePlayer (PlayerData) returns (SaveResponse);
 }
