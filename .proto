@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package RPGServer;  // mesmo package para cliente e servidor
+package RPGServer;
 
 message PlayerData {
   string email = 1;
