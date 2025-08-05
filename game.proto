@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option csharp_namespace = "RPGServer.Protos";
+option csharp_namespace = "RPG.Protos";
 
-package RPGServer;
+package RPG.Protos;
 
 message PlayerData {
   string email = 1;
